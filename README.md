@@ -4,14 +4,15 @@ An integrated strategy for the Ijssel River Area
 
 
 ## Created by
-*Group 7 - Perspective of Dikering 1
-Fenna Cleuren
-Eva Hogervorst
-Sufiyan 
-Miny Rajiv
-Jonas
-Dorris
+Group 7 - Perspective of Dikering 1
 
-## Project
+Jonas Besselink
+Fenna Cleuren
+Dorris Corsten
+Eva Hogervorst 
+Abhiramini Rajiv
+Mohammed Sufiyan
+
+## Project Description
 
 ### Folder structure
