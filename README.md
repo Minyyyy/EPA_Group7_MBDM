@@ -16,7 +16,11 @@ Mohammed Sufiyan
 ```
 
 ### Project Description
-
+Given that the Ijssel river area may experience flooding in the years to come, a strategy on appropriate policy measures needs to be developed. 
+Policy advice given from the perspective of DikeRing 1 - Doesburg. 
+Policy advice  is given recognising that the situation is subject to deep uncertainty.
+Policy advice is based on exploratory modeling results, conducted with the EMA_Workbench. 
+Project is done in light of TU Delft, EPA course "Model-based Decision Making".
 
 ### Folder structure
 - code
