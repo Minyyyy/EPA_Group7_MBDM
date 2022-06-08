@@ -3,7 +3,7 @@ MBDM_Analysists_TransportCompany_Group7
 An integrated strategy for the Ijssel River Area 
 
 
-##Created by
+## Created by
 *Group 7 - Perspective of Dikering 1
 Fenna Cleuren
 Eva Hogervorst
