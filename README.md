@@ -27,6 +27,5 @@ Mohammed Sufiyan
   * Robustness
 - data (contains data files as initially provided by course) 
 - documentation (contains information and inspiration files as initially provided by course)
-- results (contains gz and csv files)
 - final reports (contains final analysis and political reflection) 
-- 
+- results (contains analysis results saved as gz and csv files)
