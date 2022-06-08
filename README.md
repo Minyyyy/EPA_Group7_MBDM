@@ -25,5 +25,8 @@ Mohammed Sufiyan
   * Sensitivity Analysis
   * Optimization
   * Robustness
-- documentation (contains files as initially provided by course)
-- results
+- data (contains data files as initially provided by course) 
+- documentation (contains information and inspiration files as initially provided by course)
+- results (contains gz and csv files)
+- final reports (contains final analysis and political reflection) 
+- 
