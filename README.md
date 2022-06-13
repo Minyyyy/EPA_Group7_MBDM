@@ -36,6 +36,8 @@ Project is done in light of TU Delft, EPA course "Model-based Decision Making".
 
 #### Overview of the project
 
+Overview of the project:
+
 (1) Generate_basecase_disag_loc_and_time.ipynb -> We start off by running a base case. This results in base_case_without_NaN.csv
 (2) Generate_open_exploration_random_policies.ipynb -> We do open exploration for 400 scenarios with 100 policy options. This results in policies_fully_disaggregated.tar.gz
 (3) Compare_basecase_policies.ipynb -> Compares the basecase and policies. It imports base_case_without_NaN.csv and policies_fully_disaggregated.tar.gz and puts them into one dataframe. 
