@@ -98,7 +98,6 @@ def get_model_for_problem_formulation_modified(df_min_max):
     # Outcomes are all costs, thus they have to minimized:
     direction = ScalarOutcome.MINIMIZE
 
-
     variable_names = []
     variable_names_ = []
     variable_names__ = []
@@ -117,39 +116,33 @@ def get_model_for_problem_formulation_modified(df_min_max):
     
         variable_names.extend(['RfR Total Costs {}'.format(n)])
         variable_names.extend(['Expected Evacuation Costs {}'.format(n)])
-        variable_names__.extend(['A.1_Expected Annual Damage'.format(n)])
-        variable_names___.extend(['A.1_Dike Investment Costs'.format(n)])
-        variable_names____.extend(['A.1_Expected Number of Deaths'.format(n)])
-
+        variable_names__.extend(['A.1_Expected Annual Damage {}'.format(n)])
+        variable_names___.extend(['A.1_Dike Investment Costs {}'.format(n)])
+        variable_names____.extend(['A.1_Expected Number of Deaths {}'.format(n)])
+        
     dike_model.outcomes = [ScalarOutcome('All Costs',
                                              variable_name=[var for var in variable_names],
                                              function=sum_over, kind=direction,
-                                             expected_range=(df_min_max.iloc[4,1], df_min_max.iloc[4,0])
-                                             ),
+                                             expected_range=(df_min_max.iloc[4,1], df_min_max.iloc[4,0])),
 
                            ScalarOutcome('Expected Number of Deaths',
-                                             variable_name=[var for var in variable_names_
-                                             ], function=sum_over, kind=direction,                 
-                                             expected_range=(df_min_max.iloc[3,1], df_min_max.iloc[3,0])
-                                             ),                    
+                                             variable_name=[var for var in variable_names_], 
+                                             function=sum_over, kind=direction,                 
+                                             expected_range=(df_min_max.iloc[3,1], df_min_max.iloc[3,0])),                    
     
                            ScalarOutcome('A.1_Expected Annual Damage',
-                                             variable_name=[var for var in variable_names__
-                                             ], function=sum_over, kind=direction,
-                                             expected_range=(df_min_max.iloc[0,1], df_min_max.iloc[0,0])
-                                             ),  
+                                             variable_name=[var for var in variable_names__], 
+                                            function=sum_over, kind=direction,
+                                             expected_range=(df_min_max.iloc[0,1], df_min_max.iloc[0,0])),  
     
                            ScalarOutcome('A.1_Dike Investment Costs',
-                                             variable_name=[var for var in variable_names___
-                                             ], function=sum_over, kind=direction,
-                                             expected_range=(df_min_max.iloc[1,1], df_min_max.iloc[1,0])
-                                             ),
-    
+                                             variable_name=[var for var in variable_names___], 
+                                             function=sum_over, kind=direction,
+                                             expected_range=(df_min_max.iloc[1,1], df_min_max.iloc[1,0])),
+   
                            ScalarOutcome('A.1_Expected Number of Deaths',
-                                             variable_name=[var for var in variable_names____
-                                             ], function=sum_over, kind=direction,
-                                             expected_range=(df_min_max.iloc[2,1], df_min_max.iloc[2,0])
-                                             )               
+                                             variable_name=[var for var in variable_names____], 
+                                             function=sum_over, kind=direction,
+                                             expected_range=(df_min_max.iloc[2,1], df_min_max.iloc[2,0]))               
                     ]
-
     return dike_model, function.planning_steps
