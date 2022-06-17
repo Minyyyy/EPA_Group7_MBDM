@@ -23,14 +23,9 @@ Policy advice is based on exploratory modeling results, conducted with the EMA_W
 Project is done in light of TU Delft, EPA course "Model-based Decision Making".
 
 ### Folder structure
-- code
-  * Open exploration
-  * Scenario Discovery
-  * Sensitivity Analysis
-  * Optimization
-  * Robustness
+
 - data (contains data files as initially provided by course) 
-- documentation (contains information and inspiration files as initially provided by course)
+- documentation (contains 1). information and inspiration files as initially provided by course, and 2). documentation of old files)
 - final reports (contains final analysis and political reflection) 
 - results (contains analysis results saved as gz and csv files)
 
