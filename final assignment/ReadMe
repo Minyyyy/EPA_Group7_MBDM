@@ -1,9 +1,15 @@
 Overview of the project:
 
-(1) Generate_basecase_disag_loc_and_time.ipynb -> We start off by running a base case. This results in base_case_without_NaN.csv
-(2) Generate_open_exploration_random_policies.ipynb -> We do open exploration for 400 scenarios with 100 policy options. This results in policies_fully_disaggregated.tar.gz
-(3) Compare_basecase_policies.ipynb -> Compares the basecase and policies. It imports base_case_without_NaN.csv and policies_fully_disaggregated.tar.gz and puts them into one dataframe. 
+(0) Generate_basecase_disag_loc_and_time.ipynb -> We start off by running a base case. This results in base_case_without_NaN.csv
+(1) Generate_open_exploration_random_policies.ipynb -> We do open exploration for 400 scenarios with 100 policy options. This results in policies_fully_disaggregated.tar.gz
+(2) Compare_basecase_policies.ipynb -> Compares the basecase and policies. It imports base_case_without_NaN.csv and policies_fully_disaggregated.tar.gz and puts them into one dataframe. 
 We compare and analyze the base case and the policies and visualize the differences. We also conduct the PRIM analysis and the vulnerability analysis/SOBOL in this file.
-(4) problem_formulation_modified.py -> This file contains the modified problem formulation.
-(5) min_max_values.ipynb -> This generates outcome_ranges.csv. This is a very small csv file in which the maximum and minimum values of the open exploration are saved. For the optimization, the algorithm requires the maximum and minimum values as input.
-(6) MORDM_policies_optimization.ipynb -> In this notebook the optimization over policy levers is conducted. It calls the function from problem_formulation_modified.ipynb function and the minimum and maximum values from the outcome_ranges.csv file.
+(3) Sensitivity Analysisi.pynb -> The sensitivity analysis is conducted in this notebook.
+(4) Scen_Disc_Policy_Exploration.ipynb -> The PRIM analysis is conducted in this notebook. 
+(5) problem_formulation_modified.py -> This file contains the modified problem formulation.
+(6) Multi-Scenario MORDM with worst case scenarios.ipynb -> A set of worst-case scenarios is generated and a set of candidate policies is generated that optimizes 
+at mitigating and/or preventing the harm from these scenarios. This set of policies is output as pickle_results_list_2000nfe. It also outputs the data on convergence as 
+pickle_convergence_list_2000nfe
+(7) Re-evaluation_candidate_strategies.ipynb -> This uses the candidate policies set from pickle_results_list_2000nfe to test each policy under 1000 scenarios. 
+This outputs results_reevaluation.pickle
+(8) Evaluate_robustness.ipynb -> Evaluates the results from results_reevaluation.pickle using two robustness metrics.
